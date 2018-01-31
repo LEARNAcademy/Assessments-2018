@@ -24,6 +24,6 @@ AlphabetSoup(readline());
 
 var nums = [1, 5, 88, 2, 5, 42, 57, 101]
 
-var nouns = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "eraser", "zafod", "a"]
+var nouns = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "eraser", "zafod", "a"]asdasd
 
 // output of the first function should be: "1 ducks"
