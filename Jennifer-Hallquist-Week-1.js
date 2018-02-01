@@ -1,31 +1,21 @@
+const assert = require('assert');
+
 // 1. Write an anonymous function that takes one argument of type number and
 //    decides if that number is evenly divisble by three or not. If it is, print
 //    the number and "is divisible by three". If it is not, print that the
 //    number "is not divisble by three".
 
-const isNumber = (num) => {
-  return typeof num === 'number';
-};
+const isDivisible = 'is divisible by 3';
+const notDivisible = 'is not divisible by 3';
 
-const isDivisibleByThree = (num) => {
-  if (isNumber(num)) {
-    if (num % 3 === 0) {
-      console.log(`${num} is divisible by three.`);
-    } else {
-      console.log(`${num} is not divisible by three.`);
-    }
-  } else {
-    console.log(`${num} is not a number. Try again.`);
-  }
-};
+const isDivisibleByThree = n => (
+  n % 3 === 0 ? `${n} ${isDivisible}` : `${n} ${notDivisible}`
+);
 
-isDivisibleByThree(15);
-isDivisibleByThree(22);
-isDivisibleByThree(-21);
-isDivisibleByThree(-33);
-isDivisibleByThree('hey');
-isDivisibleByThree([3, 6, 9]);
-isDivisibleByThree(false);
+assert.equal(isDivisibleByThree(15), '15 is divisible by 3');
+assert.equal(isDivisibleByThree(22), '22 is not divisible by 3');
+assert.equal(isDivisibleByThree(-15), '-15 is divisible by 3');
+assert.equal(isDivisibleByThree('hey'), 'hey is not divisible by 3');
 
 // 2. Write about yourself using an object. Include at least three properties
 //    of you and store your object in a variable with your name.
@@ -46,16 +36,16 @@ const jen = {
   hobbies: ['spoiling her dogs', 'playing video games', 'watching tv']
 };
 
-console.log(jen.age); // 27
-console.log(jen.siblings[0].name); // Anthony
+assert.equal(jen.age, 27);
+assert.equal(jen.siblings[0].name, 'Anthony');
 
 // 3. Create an array with at least 4 items inside it. Show how to access two
 //    values from the array in two different ways.
 
-let colors = ['magenta', 'violet', 'fushia', 'lavender'];
+const colors = ['magenta', 'violet', 'fushia', 'lavender'];
 
-console.log(colors[0]); // magenta
-console.log(colors[colors.length - 1]); // lavender
+assert.equal(colors[0], 'magenta');
+assert.equal(colors.pop(), 'lavender');
 
 // 4. Have the function AlphabetSoup(str) take the "str" parameter being passed
 //    and return a string with the letters in alphabetical order (ie. hello
@@ -65,58 +55,68 @@ console.log(colors[colors.length - 1]); // lavender
 // Input:"hooplah"
 // Output:"ahhloop"
 
-let AlphabetSoup = (str) => {
-  return str.split('').sort().join();
-}
+const AlphabetSoup = str => str.toLowerCase().split('').sort().join('');
 
 // keep this function call here
-
-// AlphabetSoup(rl());
-AlphabetSoup("hello");
+assert.equal(AlphabetSoup('hello'), 'ehllo');
+assert.equal(AlphabetSoup('California'), 'aacfiilnor');
 
 // 5. Given the arrays below, use a for loop to print one value from each array
 //    concatenated together. How would your code need to change to accomodate
 //    arrays of different lengths?
 
-var nums = [1, 5, 88, 2, 5, 42, 57, 101]
+const nums = [1, 5, 88, 2, 5, 42, 57, 101];
+const nouns = [
+  'ducks',
+  'telephone booth',
+  'the enterprise',
+  'robots',
+  'amazon',
+  'eraser',
+  'zafod',
+  'a'
+];
 
-var nouns = [
-  "ducks",
-  "telephone booth",
-  "the enterprise",
-  "robots",
-  "amazon",
-  "eraser",
-  "zafod",
-  "a"
+const expectedResult = [
+  '1 ducks',
+  '5 telephone booth',
+  '88 the enterprise',
+  '2 robots',
+  '5 amazon',
+  '42 eraser',
+  '57 zafod',
+  '101 a'
 ];
 
 const nums2 = [3, 7, 11];
-const nouns2 = ["turkeys", "porkchops"];
+const nouns2 = ['turkeys', 'porkchops'];
+
+const expectedResult2 = [
+  '3 turkeys',
+  '7 porkchops'
+];
 
 const nums3 = [12, 8, 4];
-const nouns3 = ["books", "boats", "brains", "barns"];
+const nouns3 = ['books', 'boats', 'brains', 'barns'];
+
+const expectedResult3 = [
+  '12 books',
+  '8 boats',
+  '4 brains'
+];
 
 // output of the first function should be: "1 ducks"
+const concatenateArrays = (array1, array2) => {
+  const results = [];
+  const length = Math.min(array1.length, array2.length);
 
-let concatenateArrays = (array1, array2) => {
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length; i++) {
-      console.log(`${array1[i]} ${array2[i]}`);
-    }
+  for (let i = 0; i < length; i += 1) {
+    results.push(`${array1[i]} ${array2[i]}`);
   }
 
-  if (array1.length > array2.length) {
-    for (let j = 0; j < array2.length; j++) {
-      console.log(`${array1[j]} ${array2[j]}`);
-    }
-  } else {
-    for (let k = 0; k < array1.length; k++) {
-      console.log(`${array1[k]} ${array2[k]}`);
-    }
-  }
-}
+  return results;
+};
 
-concatenateArrays(nums, nouns);
-concatenateArrays(nums2, nouns2);
-concatenateArrays(nums3, nouns3);
+assert.deepEqual(concatenateArrays(nums, nouns), expectedResult);
+assert.deepEqual(concatenateArrays(nums2, nouns2), expectedResult2);
+assert.deepEqual(concatenateArrays(nums3, nouns3), expectedResult3);
