@@ -109,9 +109,9 @@ const expectedResult3 = [
 
 const concatenateArrays = (array1, array2) => {
   const results = [];
-  const length = Math.min(array1.length, array2.length);
 
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i < array1.length; i += 1) {
+    if (!array2[i]) return results;
     results.push(`${array1[i]} ${array2[i]}`);
   }
 
