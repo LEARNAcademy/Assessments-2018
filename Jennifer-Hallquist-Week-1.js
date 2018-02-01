@@ -106,6 +106,7 @@ const expectedResult3 = [
 ];
 
 // output of the first function should be: "1 ducks"
+
 const concatenateArrays = (array1, array2) => {
   const results = [];
   const length = Math.min(array1.length, array2.length);
