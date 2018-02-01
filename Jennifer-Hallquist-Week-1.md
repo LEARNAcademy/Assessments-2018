@@ -6,6 +6,7 @@ on your own before looking up the answer online.
 #### 1. Name all of the data types in Javascript, mark which are primitives.
 
   //Your Answer
+
   The primitive data types are string, number, boolean, null, undefined,
   and symbol.
 
@@ -13,6 +14,7 @@ on your own before looking up the answer online.
 
 
   //Googled Answer
+
   The latest ECMAScript standard defines seven data types:
 
   Six data types that are primitives:
@@ -76,6 +78,7 @@ logIt(); // inside
 #### 3. What is JSON? How does it relate to javascript objects?
 
   //Your Answer
+
   JSON stands for JavaScript Object Notation. Its syntax is very similar
   to that of an object. However, a JSON's key names must be enclosed in strings
   because one usage of JSONs is transferring data around as strings.
@@ -99,6 +102,7 @@ logIt(); // inside
   ```
 
   //Googled Answer
+
   JSON stands for JavaScript Object Notation. JSON is a format for storing and
   transporting data. JSON is often used when data is sent from a server to a
   web page.
@@ -111,12 +115,14 @@ logIt(); // inside
 #### 4. Describe a closure, what is it good for and how do you recognize one?
 
   //Your Answer
+
   A closure can be recognized when we see a function inside a function.
 
   Closures are helpful in giving inner functions access to variables located
   inside outside functions.
 
   //Googled Answer
+
   A closure is an inner function that has access to the outer (enclosing)
   function’s variables—scope chain. The closure has three scope chains: it has
   access to its own scope (variables defined between its curly brackets), it
@@ -149,6 +155,7 @@ logIt(); // inside
 #### 5. What's the difference between =, ==, and === in JavaScript?
 
   //Your Answer
+
   `=` is an assignment operator. We use it to assign a value to a variable.
   For example, `let index = 0;` sets the variable called index to a value
   of 0.
@@ -177,6 +184,7 @@ logIt(); // inside
   ```
 
   //Googled Answer
+  
   An assignment operator assigns a value to its left operand based on the value
   of its right operand. The simple assignment operator is equal (=), which
   assigns the value of its right operand to its left operand. That is, x = y
