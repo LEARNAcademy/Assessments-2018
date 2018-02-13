@@ -21,10 +21,15 @@ Six data types that are primitives:
 
 .Object (not a primitive data type)
 
+//Primitive does not have a method, it's not functional. But the object is wrapped in the string object and can call the function and method.
+//Prototype is object that wraps a primitive. In JS, we are only working with Prototype.
+//Use a method in an object and use it in the program
 
 #### 2. Look at this Javascript and try to predict, what will the browser's console show?
 
 ``` javascript
+
+//This is what we see.
 
 var text = 'outside';
 function logIt(){
@@ -34,7 +39,21 @@ function logIt(){
 
 logIt();
 
+//This is what JS sees. They foresee what is all declared and depending on the order, the answer is undefined.
+
+var text;
+text = 'outside';
+
+function logIt(){
+    var text, num, arr, person, version;
+    console.log(text);
+    text = 'inside';
+};
+
+logIt();
+
 ```
+//This is an example of hoisting. When JS is running line by line, it looks ahead in the scope. How many var/memory will it be declared?
 
 first Guess: inside
 
@@ -44,6 +63,12 @@ Then, past the code in your console and explain why you were right/wrong.
 I was wrong because the answer was undefined. This was because first of all, the var text = 'outside' is outside of the function, thus cannot grab the 'outside' value. I thought the console log would be 'inside', but this also does not work because the value of the text is set after the console log. The console log would show up 'inside' if var text = 'inside' would be before console.log(text). However, since the console.log was looking for text and there was not a value set before the console.log in the function, the result was undefined.
 
 #### 3. What is JSON? How does it relate to javascript objects?
+
+//JSON Data transfer with method that looks a lot like Javascript objects. Can we transfer method in JS objects into JSON? No!
+//menu.id ==> "File"
+//menu.popup.menuitem[1].onclick
+//menu.popup.menuitem ==> [Whole array] - you can break it down
+
 
   //Your Answer
 JSON is known as JavaScript Object Notation. JSON is a structured text format to make it readable for humans and to grab database. JASON is related to JavaScript objects because objects have keys and values to contain specific data. They are noted in a way that is pretty easy for the users to see and use.
@@ -66,6 +91,10 @@ An ordered list of values. In most languages, this is realized as an array, vect
 
 
 #### 5. What's the difference between =, ==, and === in JavaScript?
+
+// 3 == "3" true
+// 3 === "3" false
+/ if (x === 0 && y !== "3") <- looking for a 3 inside of a string.
 
   //Your Answer
 The difference between =, ==, and === in JavaScript is that:
