@@ -4,9 +4,7 @@ Try your best to answer each question on your own before looking up the answer
 online. Once you're done writing your first answer, you can google the question
 and write the best answer you find.
 
-#### 1. Here is a list of pros and cons to using the React library to build your
-#### application -- but some of them are false. Remove the false statements from
-#### the list:
+#### 1. Here is a list of pros and cons to using the React library to build your application -- but some of them are false. Remove the false statements from the list:
 
 - React was created to be simple, so that even people with minimal code
 experience could use it and create Single Page Applications (SPAs)
@@ -15,9 +13,7 @@ experience could use it and create Single Page Applications (SPAs)
 - React is a flexible library that plays the role of V in an MVC framework
 
 
-#### 2. What are "smart"(logic) and "dumb"(display) components?
-#### Explain the difference and also add why we bother to make the distinction
-#### between them.
+#### 2. What are "smart"(logic) and "dumb"(display) components? Explain the difference and also add why we bother to make the distinction between them.
 
 
 //Your Answer
@@ -49,9 +45,7 @@ They are class-based components and have their own state defined in their
 constructor() functions.
 
 
-#### 3. When we use "yarn add ..." in the terminal - what is yarn doing? And
-#### what file will always be automatically updated after we add a package with
-#### yarn?
+#### 3. When we use "yarn add ..." in the terminal - what is yarn doing? And what file will always be automatically updated after we add a package with yarn?
 
 
 //Your Answer
@@ -70,8 +64,7 @@ developers working on the project will get the same dependencies as you when
 they run yarn or yarn install.
 
 
-#### 5. There are three mistakes in this code that would cause it to break our
-#### application. Find the mistakes and fix them:
+#### 5. There are three mistakes in this code that would cause it to break our application. Find the mistakes and fix them:
 
 ```
 import React, { Component } from 'react';
@@ -172,11 +165,7 @@ component usually ends up being props of the child component. When the state is
 passed out of the current scope, we refer to it as a prop.
 
 
-#### 9. Write a paragraph or so about your experience with building tic-tac-toe.
-#### Some topics to start with might be: things you learned about yourself,
-#### concepts from React that stood out to you, something about pair programming
-#### (if you paired), or the experience of building something in code from
-#### scratch.
+#### 9. Write a paragraph or so about your experience with building tic-tac-toe. Some topics to start with might be: things you learned about yourself, concepts from React that stood out to you, something about pair programming (if you paired), or the experience of building something in code from scratch.
 
 Building Battleship was an interesting experience because it was my first time
 using React. I think my past experience with Angular helped a lot in that
