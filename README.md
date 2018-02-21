@@ -19,7 +19,7 @@ Assessments for combined curriculum of 2018
 
 ## Push to Github and make a pull request:
 
-1. Make sure you have pushed your local changes 
+1. Make sure you have pushed your local changes
 2. Go to your assessment repo on Github to check that the version there is what you want to submit
 3. Go to the LEARNAcademy/Assessments-2018 repo
 4. Click the "New Pull Request" button
@@ -34,3 +34,7 @@ Assessments for combined curriculum of 2018
 2. Make sure you are on branch master (`git checkout` into master on your machine)
 3. Run `git remote add upstream https://github.com/LEARNAcademy/Assessments-2018.git`
 4. Run `git pull upstream master` to get remote changes
+
+Dumb components are also called ‘presentational’ components because their only responsibility is to present something to the DOM
+Smart components (or container components) on the other hand have a different responsibility. Because they have the burden of being smart,
+they are the ones that keep track of state and care about how the app works.
