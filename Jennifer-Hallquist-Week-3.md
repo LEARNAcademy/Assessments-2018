@@ -9,7 +9,6 @@ and write the best answer you find.
 - React was created to be simple, so that even people with minimal code
 experience could use it and create Single Page Applications (SPAs)
 - React is a modern, efficient answer to complex UI applications
-- React is a full stack framework for modern web applications
 - React is a flexible library that plays the role of V in an MVC framework
 
 
