@@ -10,7 +10,7 @@ Try your best to answer each question on your own before looking up the answer o
 - React is a flexible library that plays the role of V in an MVC framework
 
  
- #### 2. What are "smart" and "dumb" components? Explain the difference and also add why we bother to make the distinction between them.
+ #### 2. What are "smart"(logic) and "dumb"(display) components? Explain the difference and also add why we bother to make the distinction between them.
  
  
  //Your Answer
@@ -19,10 +19,7 @@ Try your best to answer each question on your own before looking up the answer o
  //Googled Answer
  
  
-#### 3. Write a simple component that simply prints "I am a dumb component" to the screen. Be sure to include all necessary imports, expots, etc...
-
-
-#### 4. When we use "yarn add ..." in the terminal - what is yarn doing? And what file will always be automatically updated after we add a package with yarn?
+#### 3. When we use "yarn add ..." in the terminal - what is yarn doing? And what file will always be automatically updated after we add a package with yarn?
  
  
  //Your Answer
@@ -65,7 +62,7 @@ Try your best to answer each question on your own before looking up the answer o
 
     export default Recipes;
 
-#### 6. Name three input types. (NOTE: text is the default type - so it doesn't count in this case)
+#### 6. Name three html input types. (NOTE: text is the default type - so it doesn't count in this case)
  
  //Your Answer
  
@@ -84,19 +81,10 @@ Try your best to answer each question on your own before looking up the answer o
  #### 8. What is the difference between component state and props? Your answer should include a short explanation of both.
  
  
- #### 9. Name three benefits of testing and TDD:
- 
- 
  //Your Answer
  
  
  //Googled Answer
  
    
-#### 10. List two helpful testing matchers and two helpful enzyme simulators that we can use when writing our tests:
- 
- 
- //Your Answer
- 
- 
- //Googled Answer
+#### 9. Write a paragraph or so about your experience with building tic-tac-toe. Some topics to start with might be: things you learned about yourself, concepts from React that stood out to you, something about pair programming (if you paired), or the experience of building something in code from scratch.
