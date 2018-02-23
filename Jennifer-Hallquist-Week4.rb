@@ -45,18 +45,18 @@ class example
 end
 ```
 
-class Example
-  def initialize day
-    @day=day
+class Example # :nodoc:
+  def initialize(day)
+    @day = day
   end
 
   def say_hi
-    if day == "Friday"
-      puts "TGIF!"
-    elsif day == "Monday"
-      puts "Its monday again"
+    if day == 'Friday'
+      puts 'TGIF!'
+    elsif day == 'Monday'
+      puts 'Its monday again'
     else
-      puts "another day"
+      puts 'another day'
     end
   end
 end

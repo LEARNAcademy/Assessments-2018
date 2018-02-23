@@ -20,8 +20,9 @@ function method_name(arg1, arg2) {
 ```
 
 Additionally, Ruby has implicit returns as well as the concepts of private,
-public, etc methods. Also, Ruby methods that don't take any arguments do not
-need parentheses. For example, `name_string.length`.
+public, etc methods. In Ruby, arguments do not have to be enclosed inside
+parentheses. Also, Ruby methods that don't take any arguments do not
+need parentheses when called. For example, `name_string.length`.
 
 
 #### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance.
