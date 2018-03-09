@@ -127,6 +127,7 @@ the view.
 ### 10. Name two rails generator commands and what files they create:
 
 `rails generate migration`
+
 This will create a file inside the db/migrate directory. The file name will
 begin with a timestamp corresponding to when the migration was generated. Rails
 will use the timestamps when determining the order in which to run the
@@ -136,6 +137,7 @@ an empty "change" method or the appropriate statements for whatever changes you
 wanted to make to the database.
 
 `rails generate controller <name of Controller> <name of action>`
+
 If we wanted to create a controller named Users with a "register" action, this
 command would create a controller file named `users_controller.rb`, a view file
 named `register.html.erb`, a test file, a helper file, a CoffeeScript file, and
