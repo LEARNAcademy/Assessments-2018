@@ -42,15 +42,18 @@ The #{} literal is the operator used for interpolation inside double-quoted stri
 #### 6. How do you feel about testing right now? What potential pros/cons/barriers/advantages do you see to implementing BDD in your own code?
 
 //Your Answer
+I enjoy testing and see it as a necessity to being more productive. Some advantages are that you will be motivate to stay more organized, and you will work step by step moving forward with your code vs finishing it then having to de bug it later on.
 
 //Googled Answer
-
+NA
 
 #### 7. What is an instance variable in Ruby? How is it different from a normal, local variable?
 
 //Your Answer
+An instance variable allows you to share that variable in different methods and objects.
 
 //Googled Answer
+An instance variable has a name beginning with @ , and its scope is confined to whatever object self refers to. Two different objects, even if they belong to the same class, are allowed to have different values for their instance variables.
 
 #### 8. Ruby has a great community and tons of free resources to help you learn. Here is the long list of great resources: https://www.ruby-lang.org/en/documentation/. Below are a few popular ones:
 - Interactive Ruby tutorial (http://tryruby.org/levels/1/challenges/0)
@@ -59,3 +62,7 @@ The #{} literal is the operator used for interpolation inside double-quoted stri
 
 
 Choose one of these resources and go through the material (not for hours, only looking for around 10min of your time) then come back here and list a few new things you learned about Ruby.
+@names.each do |name|
+  puts "Hello #{name}!"
+end
+@names is now getting iterated over and turned into a string!
