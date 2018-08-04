@@ -6,4 +6,4 @@ Answer this one question, then follow the instructions to submit your first asse
 
 #### 1. What is one thing we did in class this week that helped you learn the most?  
 
-Go over the problems as a group in the last bit of class
+Going over the problems as a group in the last bit of class
