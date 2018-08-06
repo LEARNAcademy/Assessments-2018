@@ -29,7 +29,7 @@ console.log(testArray.slice(-2))
 
 function AlphabetSoup(str) {
   // created new Array from the string
-  var newArray = Array.from(str)
+  var newArray = [...str]
   //sort the array alphabetically
   sortedArray = newArray.sort()
   //join the array into a string without separators
