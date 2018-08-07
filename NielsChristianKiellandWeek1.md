@@ -67,11 +67,11 @@ function logIt(){
 #### 4. Describe a closure, what is it good for and how do you recognize one?
 
   //Your Answer
-  Closure is {} to to wrap around and close off functions. The help give scope and compartmentalize programs.
+  Closure is a function within the scope of another function. 
 
 
   //Googled Answer
-  A closure is the combination of a function and the lexical environment within which that function was declared. 
+  A closure is the combination of a function and the lexical environment within which that function was declared.
 
 #### 5. What's the difference between =, ==, and === in JavaScript?
 
