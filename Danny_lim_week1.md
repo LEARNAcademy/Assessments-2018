@@ -53,7 +53,7 @@ Further testing reveals that if the order is changed so that the local variable 
   Javascript object...something, I think it's something about being able to encapsulate an object so that it's more portable and able to be used elsewhere, sometimes in a non-javascript environment?
   
   //Googled Answer
-  
+  JSON stands for javascript object notation. It's a way to store javascript objects (which then can contain other datatypes or functions) as plain text, to allow it to be trasmitted or recieved in a platform agnostic way, where it can then be converted back and ran as javascript. It's similar to xml, except it is able to run (javascript) code, and is (arguably) more human readable. Everything encoded in a JSON is stored as a (nested!) object
 
 #### 4. Describe a closure, what is it good for and how do you recognize one?
 
@@ -62,6 +62,8 @@ Further testing reveals that if the order is changed so that the local variable 
   
   //Googled Answer
   from what I can gather, it's a way to pull what would otherwise be a local variable out into the global scope. This is done by using a function within a function, and returns a function. You then define another variable as a function, and then call them. This allows us to use variables from the local scope of the superfunction, even after it has finished being run. 
+
+  try 2: it's a way to store and operate on values or functions while keeping them conained (and protected from being changed) in a local scope. You can recognize one by seeing a function returning a function that's inside of it (which is distinct from a general higher order function that can call other functions without necesarily being a closure itself)
 
 #### 5. What's the difference between =, ==, and === in JavaScript?
 

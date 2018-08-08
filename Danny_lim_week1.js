@@ -1,5 +1,5 @@
 // 1. Write an anonymous function that takes one argument of type number and decides if that number is evenly divisble by three or not. If it is, print the number and "is divisible by three". If it is not, print that the number "is not divisble by three".
-function divisibleby(num, divisor){ //2 inputs, the number being divisible, and the divisor
+var divisibleby= function(num, divisor){ //2 inputs, the number being divisible, and the divisor
     if(num%divisor){ //if it's not divisible   
         console.log(num + " is not divisible by "+divisor) //print to console
     }
