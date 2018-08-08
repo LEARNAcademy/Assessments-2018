@@ -80,16 +80,21 @@ var nouns = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "
 
 //refactor the previous code to not rely on global variables, simplify/remove redundant code, and be a function
 function combine(numArray,nounArray){
+  //create j to index second array
   var j = 0
+  //test which array is longer (to ensure proper looping of shorter array)
   if(numArray.length > nounArray.length){
     for(i=0;i<numArray.length;i++){
+      //reassigns j to 0 when it reaches the last index of the array
       if(j===nounArray.length){
         j = 0
       }
       console.log(`${numArray[i]} ${nounArray[j]}`)
+      //add 1 to j as it is the index of the second array
       j++
     }
   } else {
+    //the following code is the same concept, except now num is the shorter array
     for (i=0;i<nounArray.length;i++){
       if(j===numArray.length){
         j=0
