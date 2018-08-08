@@ -8,6 +8,7 @@ These are potential interview questions. Try your best to answer each question o
   Objects (not primitive) & Primitives: Numbers, Strings, Booleans, Null, Undefined, & Symbols
   
   //Googled Answer
+Above answer from class notes
 
 
 #### 2. Look at this Javascript and try to predict, what will the browser's console show? 
@@ -28,7 +29,8 @@ first Guess:
 outside
 
 Then, pass the code in your console and explain why you were right/wrong. 
-Ok, so it took a fair bit of trial and error but I found out why it turned out undefined.  The function used another var inside the function to define "text" and because of that it didn't like the whole thing so returned "undefined".  Once I removed the var before "text = 'inside'" the function returned "outside." like I thought it would at first.  I just need to remember that when redefining a variable that has already been assigned that I should not include the var because that variable already exists and doesn't need to be assigned again, you can re-assign without the var.  
+
+Ok, so it took a fair bit of trial and error but I found out why it turned out undefined.  The function used another var inside the function to define "text" and because of that it didn't like the whole thing so returned "undefined".  Once I removed the var before "text = 'inside'" the function returned "outside." like I thought it would at first.  I just need to remember that the nested scope of the function plays a huge part in how code is read.  Between closures and hoisting hoping to keep it all organized.
 
 #### 3. What is JSON? How does it relate to javascript objects?
 
