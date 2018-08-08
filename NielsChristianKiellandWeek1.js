@@ -38,8 +38,9 @@ console.log("My name is " + Niels._name + ". I speak two languages " + Niels._sp
 var superheroes = [{name: "Batman", secretIdentity: "Bruce Wayne"}, {name: "Flash", secretIdentity: "Wally West"},
 									 {name: "Green Lantern", secretIdentity: "John Stewart"}, {name: "Wonder Woman", secretIdentity: "Diana Prince"}];
 
+console.log("--Access 1--");
 console.log(superheroes[0], superheroes[1]);
-console.log(superheroes[0].name + " " + superheroes[0].secretIdentity)
+//console.log(superheroes[0].name + " " + superheroes[0].secretIdentity)
 
 function whatsInHalfTheArr(arr){
 	for (i = 0; i < ( arr.length / 2 ); i++){
@@ -48,7 +49,7 @@ function whatsInHalfTheArr(arr){
 		}
 	}
 }
-
+console.log("--Access 2--");
 whatsInHalfTheArr(superheroes);
 
 
@@ -79,7 +80,9 @@ function AlphabetSoup2(str) {
 	return str.split('').sort((a,b) => a.localeCompare(b, { ignorePunctuation: true })).join('');
 }
 
+console.log("--case-sensitive--");
 console.log(AlphabetSoup("hooplah"));
+console.log("--not-case-sensitive--");
 console.log(AlphabetSoup2("HooPlah"));
 
 // keep this function call here
@@ -91,35 +94,32 @@ console.log(AlphabetSoup2("HooPlah"));
 	// change to accomodate arrays of different lengths?
 
 var nums = [1, 5, 88, 2, 5, 42, 57, 101];
-
 var nouns = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "eraser", "zafod", "a"]
-
+// Iterates length of arr1 , and logs arr1[i] + arr2[i]
 function numsOfNouns(arr1, arr2){
 	for (i = 0; i < arr1.length; i++){
 		console.log(arr1[i] + " " + arr2[i]);
 	}
 	return;
 }
-
+console.log("5-1");
 numsOfNouns(nums, nouns);
 
 var nums2 = [1, 5, 88, 2, 5, 42, 57, 101, 1000, 54, 89];
-
 var nouns2 = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "eraser", "zafod", "a"]
-
+// Goes through the array for the full length of the longest array logs everyone even if values are undefined.
 function numsOfNouns2(arr1, arr2){
 	for (i = 0; i < arr1.length || i < arr2.length; i++){
 		console.log(arr1[i] + " " + arr2[i]);
 	}
 	return;
 }
-
+console.log("--5-1--");
 numsOfNouns2(nums2, nouns2);
 
 var nums3 = [1, 5, 88, 2, 5, 42, 57, 101, 1000, 54, 89];
-
 var nouns3 = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "eraser", "zafod", "a", "banana", "bird"]
-
+// Iterates through both arrays, only logs if values are defined
 function numsOfNouns3(arr1, arr2){
 	for (i = 0; i < arr1.length || i < arr2.length; i++){
 		if (arr1[i] && arr2[i]){
@@ -128,7 +128,7 @@ function numsOfNouns3(arr1, arr2){
 	}
 	return;
 }
-
+console.log("5-3");
 numsOfNouns3(nums3, nouns3);
 
 // output of the first function should be: "1 ducks"
