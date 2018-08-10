@@ -43,17 +43,19 @@ Wrong.  It was undefined because logIt() isn't calling anything.  If we have it 
 
   //Your Answer
 
+So...we alluded to this in class but never really covered it, right?
 
   //Googled Answer
 
+JavaScript Object Notation.  Format for structuring data in objects (key:value pairing is essential to it).
 
 #### 4. Describe a closure, what is it good for and how do you recognize one?
 
   //Your Answer
-
+A self-contained code that is reusable, ie, doesn't rely on global variables but is dynamic to work with multiple inputs.  
 
   //Googled Answer
-
+A closure is an inner function that has access to the outer (enclosing) function's variables—scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function's variables, and it has access to the global variables.
 
 #### 5. What's the difference between =, ==, and === in JavaScript?
 
