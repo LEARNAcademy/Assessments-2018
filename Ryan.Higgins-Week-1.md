@@ -9,10 +9,10 @@ These are potential interview questions. Try your best to answer each question o
 
   //Googled Answer
 Strings, numbers, null, undefined, symbol, boolean objects
+
 #### 2. Look at this Javascript and try to predict, what will the browser's console show?
 
-``` javascript
-
+```javascript
 var text = 'outside';
 function logIt(){
     console.log(text);
@@ -20,7 +20,6 @@ function logIt(){
 };
 
 logIt();
-
 ```
 
 first Guess:
