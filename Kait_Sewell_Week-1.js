@@ -38,8 +38,15 @@ console.log(colorArray.slice(0, 2));
 // Output:"ahhloop"
 
 function AlphabetSoup(str) {
-    var str = str.split(/(?:)/u).reverse().join('');
-	return str; 
+    var reversed = str.split(/(?:)/u).reverse().join('');
+	return reversed; 
+}
+
+// so apparently, I did some wishful reading and assumed it wanted the reverse of the word not the alphabet order of the word.
+
+function AlphabetSoupAgain(str) {
+    var sorted = str.split(/(?:)/u).sort().join('');
+	return sorted; 
 }
 
 // 5. Given the arrays below, use a for loop to print one value from each array concatenated together. How would your code need to change to accomodate arrays of different lengths?
