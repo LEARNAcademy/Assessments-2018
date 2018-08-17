@@ -1,46 +1,38 @@
 //1. Write a simple React component that simply prints "I am a component" to the screen. Be sure to include all necessary imports, exports, etc...
-//public/index.html
-<!doctype html></body>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"> </meta>
-    <meta name="viewport" content="width = device-width, initial-scale=1"></meta>
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <title>Component</title></link>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
-
-// src/App.js
-import React, { Component } from 'react';
+// App.js
+import React, { Component } from 'react'
+import Hello from './hello'
 
 class App extends Component {
   render () {
     return {
-      <h1>I am a component!</h1>
+      <div className="helloBox">
+      <Hello />
+      </div>
     };
   }
 }
 export default App;
+// hello.js
+import React, { Component } from 'react'
 
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+class Hello extends Component{
+  render(){
+    return{
+      <div>
+      <h1>I am a component!</h1>
+      </div>
+    }
+  }
+}
+export default Hello
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
 //2. Practice With Loops: In React, we often use the map function to iterate over an array held in state. To get more practice with this, write a vanilla javascript for loop that outputs the same thing as the map function below. 
 
 
 var stuffArray = [42, "Arthur Dent", 1978, "Zaphod", "Vogon", "Marvin, the Paranoid Android"]
 
-stuffArray.map(function(el, i){
+stuffArray.map((el, i)=>{
   console.log(el + " is at index: " + i)
 })
 
