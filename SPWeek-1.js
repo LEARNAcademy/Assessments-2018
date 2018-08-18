@@ -43,11 +43,31 @@ for (i = 0; i < array.length; i++) {
 
 // Input:"hooplah" Output:"ahhloop"
 
-function alphabet_order(str) {
+function alphabetSoup(str) {
     return str.split("").sort().join("");
   }
-console.log(alphabet_order("hooplah"));
+console.log(alphabetSoup("hooplah"));
+//If combining on one line, make sure they are ordered correctly and check for mutators vs. accessors
 
+//In class review (first line to run)
+function alphabetSoup(str) {
+
+//create an empty array, third line to run
+let letters = str.split("")
+
+//split the string into an arrays
+
+//Alphabetize the array, fourth line to run - calling the function "sort"
+letters.sort()
+
+//Join the letters back into a string, fifth line to run - calls the function "join" and redefines the variable
+letters = letters.join("")
+
+//return the string - sixth(last) line of the code to run - returning the variable
+return letters;
+}
+//Second line to run
+AlphabetSoup("hooplah");
 // 5. Given the arrays below, use a for loop to print one value from each array concatenated together. How would your code need to change to accomodate arrays of different lengths?
 
 var nums = [1, 5, 88, 2, 5, 42, 57, 101]
