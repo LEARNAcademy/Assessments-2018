@@ -114,6 +114,9 @@ message(Annie)
 #### 10. How would you explain the idea of "inheritance" in object oriented programming?
  
  
- //Your Answer
+ //Your Answer 
+
+ objects deeper in the code inherit the qualities of the objects that are further outward in scope
  
  //Googled Answer
+It is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
