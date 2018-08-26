@@ -67,11 +67,23 @@ function AlphabetSoup(str) {
 	var str = str.toLowerCase();
 	var strArr = [];
 
-	for(i = 0; i < str.length; i++){
+	for(let i = 0; i < str.length; i++){
 		strArr.push(str.charAt(i));
 	}
 
-	str = strArr.sort().join("");
+	for(let i = 0; i < strArr.length; i++){
+		console.log("entering first loop...");
+		for(let j = i+1; j < strArr.length; j++){
+			console.log("entering second loop...");
+			if(strArr[i] > strArr[j]){
+				var tmp = strArr[i];
+				strArr[i] = strArr[j];
+				strArr[j] = tmp;
+			}
+		}
+	}
+
+	str = strArr.join("");
 	return str;
 
 }
@@ -80,10 +92,16 @@ function AlphabetSoup2(str) {
 	return str.split('').sort((a,b) => a.localeCompare(b, { ignorePunctuation: true })).join('');
 }
 
+function AlphabetSoup3(str){
+	return str.split("").sort().join("");
+}
+
 console.log("--case-sensitive--");
-console.log(AlphabetSoup("hooplah"));
+console.log(AlphabetSoup("hooPlah"));
 console.log("--not-case-sensitive--");
 console.log(AlphabetSoup2("HooPlah"));
+console.log("--one line function version--");
+console.log(AlphabetSoup2("hooplah"));
 
 // keep this function call here
 
