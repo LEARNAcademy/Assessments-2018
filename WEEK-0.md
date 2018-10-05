@@ -6,4 +6,6 @@ Answer this one question, then follow the instructions to submit your first asse
 
 #### 1. What is one thing we did in class this week that helped you learn the most?  
 
-asldfkljwefo
+Honestly, today's GitHub lesson was amazing. I like approaching learning by dissecting processes into steps and then actually doing them.
+
+I absolutely love using the terminal (Window's Command Prompt) to run programs and save file states, etc. I feel like an actual programmer now!
