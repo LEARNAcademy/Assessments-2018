@@ -47,8 +47,13 @@ var nouns = ["ducks", "telephone booth", "the enterprise", "robots", "amazon", "
 
 // output of the first function should be: "1 ducks"
 
-function concat() {
+function NumNoun(nums, nouns) {
+	var NumNounA = [];
 	for (var i = 0; i < nums.length; i++) {
+		 NumNounA.push(`${nums[i]} ${nouns[i]}`)
 		 
 	}
+
+	return NumNounA;
 }
+console.log(NumNoun(nums, nouns));
