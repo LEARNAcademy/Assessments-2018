@@ -48,4 +48,34 @@ console.log(howMany("Hello World", "l"))
 
 console.log(howMany("Hello World", "z"))
 
+
+
 // should return => 0
+
+
+class Plant {
+	constructor (){
+		this.needsSun = true;
+		this.needsWater = true;
+		this.waterLevel = 0;
+	}
+	water() {
+		this.waterLevel += 25;
+	}
+}
+
+var rose = new Plant()
+console.log(rose)
+rose.water()
+console.log(rose.waterLevel)
+
+class Cactus extends Plant {
+	constructor(props){
+		super(props)
+		this.leaves = "Spines"
+		this.location = "Desert"
+	}
+}
+
+var pricklyPear = new Cactus()
+console.log(pricklyPear)
