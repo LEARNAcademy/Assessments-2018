@@ -6,4 +6,4 @@ Answer this one question, then follow the instructions to submit your first asse
 
 #### 1. What is one thing we did in class this week that helped you learn the most?  
 
-Reviewing challenges or exercises at the end of class helped solidify what I learned. Also helped clarify issues or concerns I faced when completing the challenges. 
+Reviewing challenges or exercises at the end of class helped solidify what I learned. Also helped clarify issues or concerns I faced when completing the challenges.
