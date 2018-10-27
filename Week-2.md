@@ -5,9 +5,10 @@ Try your best to answer each question on your own before looking up the answer o
 #### 1. How do you link a css file to your html page?
 
  //Your Answer
- 
+
  Create a link tag in your html file and put the following:
- <link rel="stylesheet"  type="text/css" href="styles.css" /> //Or what ever name you gave your css style sheet file.
+
+ <link rel="stylesheet"  type="text/css" href="styles.css" /> Or what ever name you gave your css style sheet file.
 
  //Googled Answer
 
