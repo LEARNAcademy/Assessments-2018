@@ -16,27 +16,34 @@ Try your best to answer each question on your own before looking up the answer o
 
 To use the <link> tag to specify an external style sheet, follow these steps:
 
-1) Define the style sheet.
-External style sheets are very similar to the ones you already know. Just put all the styles in a separate text document without the <style> and </style> tags.
+	1) Define the style sheet.
+	External style sheets are very similar to the ones you already know. Just put all the styles in a separate text document without the <style> and </style> tags.
 
-2) Create a link element in the HTML page’s head area to define the link between the HTML and CSS pages.
-Example:
- <link rel = "stylesheet"
-   type = "text/css"
-   href = "myStyle.css" />
-3) Set the link’s relationship by setting the rel = “stylesheet” attribute.
-Honestly, stylesheet is almost the only relationship you’ll ever use, so this should become automatic.
+	2) Create a link element in the HTML page’s head area to define the link between the HTML and CSS pages.
+	Example:
+	 <link rel = "stylesheet"
+	   type = "text/css"
+	   href = "myStyle.css" />
+	3) Set the link’s relationship by setting the rel = “stylesheet” attribute.
+	Honestly, stylesheet is almost the only relationship you’ll ever use, so this should become automatic.
 
-4) Specify the type of style by setting type = “text/css“.
+	4) Specify the type of style by setting type = “text/css“.
 
-5)Determine the location of the style sheet with the href attribute.
+	5)Determine the location of the style sheet with the href attribute.
 
 
  #### 2. What is a css class? How do you use declare one in html? When should you use an id instead of a class?
 
  //Your Answer
 
+ A CSS class is a way to select multiple elements in an html file. Typically you would declare a css class by inserting the class name into the first tag of the element you are targeting. Example would be the "<p>" tag. You would want to insert the class name after the "p". "<p class="intro"></p>".
+
+An id selector is typically used on one particular or specific element. The id selector is used when you want to change that specific element without affecting the other matching elements.
  //Googled Answer
+
+ The .class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class. You can also specify that only specific HTML elements should be affected by a class.
+
+ The #id selector styles the element with the specified id.
 
 
 #### 3. The class "heading-box" exists in our html file - write the css code that would:
