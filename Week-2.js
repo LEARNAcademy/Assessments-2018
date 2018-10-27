@@ -1,5 +1,5 @@
 // 1. Write an anonymous function that takes one argument of type array and returns the contents of that array in reverse order.
-
+test
 // test array: var testCase = ["one", "two", "three", "four"]
 
 var reverseArray(list) {
