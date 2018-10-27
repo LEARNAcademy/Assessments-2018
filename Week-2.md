@@ -39,7 +39,8 @@ To use the <link> tag to specify an external style sheet, follow these steps:
  A CSS class is a way to select multiple elements in an html file. Typically you would declare a css class by inserting the class name into the first tag of the element you are targeting. Example would be the "<p>" tag. You would want to insert the class name after the "p". "<p class="intro"></p>".
 
 An id selector is typically used on one particular or specific element. The id selector is used when you want to change that specific element without affecting the other matching elements.
- //Googled Answer
+
+//Googled Answer
 
  The .class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class. You can also specify that only specific HTML elements should be affected by a class.
 
@@ -52,31 +53,70 @@ An id selector is typically used on one particular or specific element. The id s
 ##### 2) give it a black border that is 5px wide,
 ##### 3) make its text appear in the center of the box
 
+.heading_box {
+	border: 5px, solid, black;
+	margin: auto;
+	text-align: center;
+}
 
 #### 4. What is Bootstrap? Explain a few reasons that you might choose to use it in a project?
 
  //Your Answer
+ Its a front end framework that includes html, css, and javascript. Bootstrap is useful for responsive web design and building websites for mobile devices.
 
 
  //Googled Answer
 
+ What is Bootstrap?
+ Bootstrap is a free front-end framework for faster and easier web development
+ Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+ Bootstrap also gives you the ability to easily create responsive designs
+
+Why Use Bootstrap?
+Advantages of Bootstrap:
+Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework
+Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera)
+
 
 #### 5. Name 4 semantic html tags.
+<nav>
+<section>
+<header>
+<footer>
+
 
 #### 6. What is block scope that became available in ES6? Include how it differs from javascript's local and global scope, and what variables are block scoped.
 
  //Your Answer
+Block scope is defined by the use of local scope variables defined with the use of let and const inside of curly brackets.
 
+Local: Variables defined inside of a function or curly brackets.
+Global: Variables defined outside of a function.
+Block scope variables: When creating let or const variables inside of a function or curly braces, they are only available within that function or braces.
 
  //Googled Answer
+
+
 
  #### 7. What is front end development? Can you identify any tools/skills that are uniquely required of front end developers?
 
  //Your Answer
-
+Front end development require the basic use of HTML5, CSS, and Javascript. There are other tools that can be implemented and utilized as a front end developer, such as Boostrap, SASS, and even GitHub. Responsive design is very important as there are many different browsers and devices that have access to the internet and that can display your website. As a developer its important to account for as many as you can so that your website displays properly.
 
  //Googled Answer
-
+10 Essential skills every front end developer needs:
+	1) HTML/css
+	2) JavaScript
+	3) CSS & Javascript frameworks
+	4) CSS Preprocessing
+	5) Version Control/GIT
+	6) Responsive Design
+	7) Testing/Debugging
+	8) Browser Developer Tools
+	9) Building & Automation Tools/Web Performance
+	10) Command Line 
 
  #### 8. Choose one of the new ES6 concepts we learned about this week (namely: block scope, classes, and string interpolation) and write example code that demonstrates the concept, with comments to explain what is going on.
 

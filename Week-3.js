@@ -29,7 +29,7 @@ stuffArray.map(function(el, i){
 // your for loop here, you can use the same stuffArray array
 
 
-3. Basic sorting: Find the cheapest price -- you are given a list of prices and need to find the signle lowest price from the array. Write a function that takes in an array of numbers, and returns the lowest price
+3. Basic sorting: Find the cheapest price -- you are given a list of prices and need to find the single lowest price from the array. Write a function that takes in an array of numbers, and returns the lowest price
 
 var steal = function(){
 
