@@ -5,14 +5,15 @@ Try your best to answer each question on your own before looking up the answer o
 #### 1. How do you link a css file to your html page?
 
  //Your Answer
+ 
  Create a link tag in your html file and put the following:
  <link rel="stylesheet"  type="text/css" href="styles.css" /> //Or what ever name you gave your css style sheet file.
 
  //Googled Answer
 
-testing
 
-<!-- To use the <link> tag to specify an external style sheet, follow these steps:
+
+To use the <link> tag to specify an external style sheet, follow these steps:
 
 1) Define the style sheet.
 External style sheets are very similar to the ones you already know. Just put all the styles in a separate text document without the <style> and </style> tags.
@@ -27,7 +28,7 @@ Honestly, stylesheet is almost the only relationship you’ll ever use, so this 
 
 4) Specify the type of style by setting type = “text/css“.
 
-5)Determine the location of the style sheet with the href attribute. -->
+5)Determine the location of the style sheet with the href attribute.
 
 
  #### 2. What is a css class? How do you use declare one in html? When should you use an id instead of a class?
