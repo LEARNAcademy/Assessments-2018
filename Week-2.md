@@ -98,6 +98,12 @@ Block scope variables: When creating let or const variables inside of a function
 
  //Googled Answer
 
+ With var
+ Variables declared with var do not have block scope. Variables introduced with a block are scoped to the containing function or script, and the effects of setting them persist beyond the block itself. In other words, block statements do not introduce a scope. Although "standalone" blocks are valid syntax, you do not want to use standalone blocks in JavaScript, because they don't do what you think they do, if you think they do anything like such blocks in C or Java.
+
+ With let and const
+By contrast, identifiers declared with let and const do have block scope. They aren't hoisted. Repeated declarations will result in an error.
+
 
 
  #### 7. What is front end development? Can you identify any tools/skills that are uniquely required of front end developers?
@@ -116,9 +122,23 @@ Front end development require the basic use of HTML5, CSS, and Javascript. There
 	7) Testing/Debugging
 	8) Browser Developer Tools
 	9) Building & Automation Tools/Web Performance
-	10) Command Line 
+	10) Command Line
 
  #### 8. Choose one of the new ES6 concepts we learned about this week (namely: block scope, classes, and string interpolation) and write example code that demonstrates the concept, with comments to explain what is going on.
+
+Example: String interpolation
+let myName = "Jason Bourne"
+console.log(`Hi my name is ${myName}.`)
+
+Example: Classes
+
+class User {
+    constructor(email, username, birthday) {
+        this.email = email;
+        this.username = username;
+        this.birthday = birthday;
+    }
+}
 
 
  #### 9. What is the difference between a div and a span?
@@ -128,6 +148,9 @@ Front end development require the basic use of HTML5, CSS, and Javascript. There
 
 
  //Googled Answer
+ The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a div (division) element is block-line (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code.
+
+
 
 
 #### 10. How would you explain the idea of "inheritance" in object oriented programming?
@@ -135,4 +158,7 @@ Front end development require the basic use of HTML5, CSS, and Javascript. There
 
  //Your Answer
 
+ Parent objects can pass properties and behaviors to a children of its classes.
+
  //Googled Answer
+ Inheritance in most class-based object-oriented languages is a mechanism in which one object acquires all the properties and behaviors of another object. JavaScript is not a class-based language although class keyword is introduced in ES2015, it is just syntactical layer. JavaScript still works on prototype chain.
