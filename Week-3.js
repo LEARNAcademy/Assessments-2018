@@ -27,9 +27,18 @@ stuffArray.map(function(el, i){
 })
 
 // your for loop here, you can use the same stuffArray array
+var stuffArray = [42, "Arthur Dent", 1978, "Zaphod", "Vogon", "Marvin, the Paranoid Android"]
+function standardJs(arr) {
+	for(let i = 0; i < stuffArray.length; i++){
+		console.log(arr[i] " is at index: " + i)
+	}
+}
 
 
 3. Basic sorting: Find the cheapest price -- you are given a list of prices and need to find the single lowest price from the array. Write a function that takes in an array of numbers, and returns the lowest price
+var foodPrice = [1, 3, 5, 6, 29]
+
+Math.min(...foodPrice)
 
 var steal = function(){
 
