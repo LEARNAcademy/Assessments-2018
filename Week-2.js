@@ -1,12 +1,13 @@
 // 1. Write an anonymous function that takes one argument of type array and returns the contents of that array in reverse order.
 
-// test array: var testCase = ["one", "two", "three", "four"]
+//test array:
+//var testCase = ["one", "two", "three", "four"]
 
-var reverseArray(list) {
-  // ... your code here
+function reverseArray(list) {
+  return list.reverse();
 }
 
-reverseArray(test)
+//console.log(reverseArray(testCase))
 
 // expected output: ["four", "three", "two", "one"]
 
@@ -23,22 +24,31 @@ var bicycle = {
 }
 
 // Log the type of bicycle:
-console.log()
+//console.log(`Bicycle type: ${bicycle.type}`)
 
 // Log just the bell from the list of gear
-console.log()
+//console.log(`Bicycle bell: ${bicycle.gear[2]}`)
 
 // Log the correct PSI for the tires
-console.log()
+//console.log(`Bicycle tire PSI: ${bicycle.wheels.specs[2]}`)
 
 // 3. Write a function that takes two arguments, a string and an individual letter. The function should return a count of how many times the letter appears in the string.
 
+function countLetter(str, letter) {
+	// return a count of how many times letter appears in str
+	let count = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str[i] === letter) {
+			count++
+		}
+	}
+	return count;
+}
+
 // examples:
 
-countLetter("Hello World", "l")
-
+//console.log(countLetter("Hello World", "l"))
 // should return => 3
 
-countLetter("Hello World", "z")
-
+//console.log(countLetter("Hello World", "z"))
 // should return => 0
