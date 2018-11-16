@@ -12,9 +12,15 @@ Try your best to answer each question on your own before looking up the answer o
 
 
  //Your Answer
+Dumb components: It is a component that receives data typically via props and its sole responsibility would be to display or render that data to the browser or DOM.
 
+Smart components: Typically handle or are responsible for handling state within a component. That data and info is typically passed own to the child or dumb component via props.
 
  //Googled Answer
+
+ Dumb components are also called ‘presentational’ components because their only responsibility is to present something to the DOM. Once that is done, the component is done with it.
+
+ Smart components (or container components) on the other hand have a different responsibility. Because they have the burden of being smart, they are the ones that keep track of state and care about how the app works. Using the container design pattern, the container components are separated from the presentational components and each handles their own side of things. The container components do the heavy lifting and pass the data down to the presentational components as props.
 
 
 #### 3. When we use "yarn add ..." in the terminal - what is yarn doing? And what file will always be automatically updated after we add a package with yarn?
@@ -22,8 +28,13 @@ Try your best to answer each question on your own before looking up the answer o
 
  //Your Answer
 
+ Yarn add is adding any and all dependencies needed for the source code that you are utilizing.
+
 
  //Googled Answer
+ In general, a package is simply a folder with code and a package.json file that describes the contents. When you want to use another package, you first need to add it to your dependencies. This means running yarn add [package-name] to install it into your project.
+
+ This will also update your package.json and your yarn.lock so that other developers working on the project will get the same dependencies as you when they run yarn or yarn install.
 
 
 #### 5. There are three mistakes in this code that would cause it to break our application. Find the mistakes and fix them:
@@ -111,6 +122,11 @@ Think of your favorite social media app. Twitter for example has lots of interac
 
 
  //Googled Answer
+ Properties are passed from outside of component. Properties are considered immutable once they set in many application we want our application to update as visitor makes changes to our site.
+
+ States: We can store data in components by something well know states. We can remove and update value of states, according to view changes.
+
+ Lopez, Lionel. React: Quickstart Step-By-Step Guide To Learning React Javascript Library (React.js, Reactjs, Learning React JS, React Javascript, React Programming) (p. 86). Kindle Edition. 
 
 
 #### 9. Write a paragraph or so about your experience with building tic-tac-toe. Some topics to start with might be: things you learned about yourself, concepts from React that stood out to you, something about pair programming (if you paired), or the experience of building something in code from scratch.
