@@ -5,8 +5,12 @@ Try your best to answer each question on your own before looking up the answer o
 
 #### 1. What is a method in Ruby? How is it different or similar to functions in JavaScript?
 
+A javascript function is typically a set of statements or expressions that complete or perform a particular task. In Ruby a method follows this same action. The structure and syntax of Ruby methods are completely different. Parentheses are optional in Ruby.
 
-#### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance. 
+Googled answer:
+A method in Ruby is a set of expressions that returns a value. With methods, one can organize their code into subroutines that can be easily invoked from other areas of their program. Other languages sometimes refer to this as a function. A method may be defined as a part of a class or separately.
+
+#### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance.
 
 
 [Your Answer]
@@ -18,11 +22,13 @@ Try your best to answer each question on your own before looking up the answer o
 #### 3. What is rspec and what is the general process for writing tests in RSpec?
 
 //Your Answer
+ Rspec is a behavioral driven development procedure for the Ruby language.
 
 //Googled Answer
 
+RSpec is a great tool in the behavior-driven development (BDD) process of writing human readable specifications that direct and validate the development of your application.
 
-#### 4. Name three possible non-inheritance relationships between ruby objects? 
+#### 4. Name three possible non-inheritance relationships between ruby objects?
 
 //Your Answer
 
