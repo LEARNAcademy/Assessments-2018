@@ -19,7 +19,7 @@ Assessments for combined curriculum of 2018
 
 ## Push to Github and make a pull request:
 
-1. Make sure you have pushed your local changes 
+1. Make sure you have pushed your local changes
 2. Go to your assessment repo on Github to check that the version there is what you want to submit
 3. Go to the LEARNAcademy/Assessments-2018 repo
 4. Click the "New Pull Request" button
