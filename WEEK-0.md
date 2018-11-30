@@ -7,3 +7,4 @@ Answer this one question, then follow the instructions to submit your first asse
 #### 1. What is one thing we did in class this week that helped you learn the most?  
 
 I have learned how to use GitHub, which I haven't used it.
+I have updated Week-0 assessment
