@@ -111,3 +111,22 @@
 //   }
 // }
 // //Story 3
+function car(newMake, newModelYear, newColor){
+  var speed = 10
+  return{
+    year: newModelYear,
+    make: newMake,
+    color: newColor,
+  //write a function that combines these properties
+    carInfo: function() {return this.year +" "+this.make+" "+"in "+this.color},
+    getSpeed: function() {return speed},
+    accelerate: function() {speed += 10},
+    brake: function() {speed -= 7},
+  }
+}
+var car1 = car("Honda", 2018, "Red")
+function speedUp(car1){
+  while(car1.getSpeed() <= 50){
+    car1.accelerate()
+  }
+}
