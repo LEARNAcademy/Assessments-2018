@@ -16,7 +16,6 @@ var divide = function(num) {
 	}
 }
 
-
 console.log(divide(num));
 
 
