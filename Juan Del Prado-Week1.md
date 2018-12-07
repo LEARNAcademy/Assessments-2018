@@ -33,9 +33,10 @@ Then, past the code in your console and explain why you were right/wrong:
 Undefined. I was wrong because I did not consider variable "hoisting".
 
 #### 3. What is JSON? How does it relate to javascript objects?
-
   //Your Answer:
- Don't remember
+
+
+ JavaScript Object something.
   
   
   //Googled Answer:
@@ -72,6 +73,7 @@ Refer, compare, equal to.
 
 These are comparison operators:
 
+=  	assign
 ==	equal to
 ===	equal value and equal type
 
