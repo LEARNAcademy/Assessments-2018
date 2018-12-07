@@ -51,10 +51,13 @@ I was wrong, running logIt returns undefined. This is because the logIt function
 #### 4. Describe a closure, what is it good for and how do you recognize one?
 
   //Your Answer
-
+  To be honest I didn't understand this principal before I Googled it.
 
   //Googled Answer
-
+  Functions, aren't just functions, they are also closures. The function body has
+  access to variables that assigned outside the body of the function. This means
+  you don't have to hand in global variables as arguments in your function as it
+  can access them already. 
 
 #### 5. What's the difference between =, ==, and === in JavaScript?
 
