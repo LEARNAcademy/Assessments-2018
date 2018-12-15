@@ -2,13 +2,14 @@
 
 // test array: var testCase = ["one", "two", "three", "four"]
 
-var reverseArray(list) {
-  // ... your code here
+var reverseArray = function(input) {
+	 input = input.reverse("")
+  console.log(input)
 }
+reverseArray(["one", "two", "three", "four"]);
 
-reverseArray(test)
 
-// expected output: ["four", "three", "two", "one"]
+
 
 // 2. Given the object below, fill in how to find specific information:
 
@@ -23,22 +24,26 @@ var bicycle = {
 }
 
 // Log the type of bicycle:
-console.log()
+console.log(bicycle.type)
 
 // Log just the bell from the list of gear
-console.log()
+console.log(bicycle.gear[2])
 
 // Log the correct PSI for the tires
-console.log()
+console.log(bicycle.wheels.specs[2])
+
+
+
 
 // 3. Write a function that takes two arguments, a string and an individual letter. The function should return a count of how many times the letter appears in the string.
 
-// examples:
-
-countLetter("Hello World", "l")
-
-// should return => 3
-
-countLetter("Hello World", "z")
-
-// should return => 0
+function countLetter(string, letter) {
+	let count = 0
+  for(i = 0; i < string.length; i++) {
+    if(string[i] === letter) {
+      count++
+		}
+  }
+	console.log(count);
+}
+countLetter("this is a test", "t")
