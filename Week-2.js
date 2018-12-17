@@ -26,10 +26,10 @@ console.log(bicycle.wheels.specs[2]);
 // // examples:
 //
 
-countLetter(str, char) {
+function countLetter(str, char){
 	return str.split(char).length - 1;
 }
-console.log(countLetter("Hello World", "l")
+console.log(countLetter("Hello World", "l"))
 // // should return => 3
 // countLetter("Hello World", "z")
 //
