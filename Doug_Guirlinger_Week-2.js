@@ -1,12 +1,13 @@
 // 1. Write an anonymous function that takes one argument of type array and returns the contents of that array in reverse order.
 
-// test array: var testCase = ["one", "two", "three", "four"]
-
-var reverseArray(list) {
-  // ... your code here
-}
-
-reverseArray(test)
+// test array:
+// var testCase = ["one", "two", "three", "four"]
+//
+// function reverseArray(list) {
+// 	return list.reverse()
+// }
+//
+// console.log(reverseArray(testCase));
 
 // expected output: ["four", "three", "two", "one"]
 
@@ -23,22 +24,35 @@ var bicycle = {
 }
 
 // Log the type of bicycle:
-console.log()
+// console.log(bicycle.type)
 
 // Log just the bell from the list of gear
-console.log()
+// console.log(bicycle.gear[2])
 
 // Log the correct PSI for the tires
-console.log()
+// console.log(bicycle.wheels.specs[2])
 
 // 3. Write a function that takes two arguments, a string and an individual letter. The function should return a count of how many times the letter appears in the string.
 
 // examples:
 
-countLetter("Hello World", "l")
+// countLetter("Hello World", "l")
 
 // should return => 3
 
-countLetter("Hello World", "z")
+// countLetter("Hello World", "z")
 
 // should return => 0
+
+// function letterCounter(str, letter) {
+// 	strArr = str.split("")
+// 	letterCountArr =[]
+// 	for (i = 0; i < strArr.length; i++) {
+// 		if (strArr[i].toLowerCase() === letter.toLowerCase()) {
+// 			letterCountArr.push(strArr[i])
+// 		}
+// 	}
+// 	return letterCountArr.length
+// }
+//
+// console.log(letterCounter(`California`, 'a'))
