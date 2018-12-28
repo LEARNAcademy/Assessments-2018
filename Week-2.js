@@ -1,44 +1,54 @@
 // 1. Write an anonymous function that takes one argument of type array and returns the contents of that array in reverse order.
+let testCase = ["one", "two", "three", "four"]
 
-// test array: var testCase = ["one", "two", "three", "four"]
-
-var reverseArray(list) {
-  // ... your code here
+let reverseArray = function(list) {
+	return list.reverse();
 }
 
-reverseArray(test)
+reverseArray(testCase)
 
-// expected output: ["four", "three", "two", "one"]
 
 // 2. Given the object below, fill in how to find specific information:
 
 var bicycle = {
 	type: "Roadbike",
-	gear: ["comfy seat", "cool handlebars", "vintage bell", "toe clips"],
+	gear: [
+		"comfy seat",
+		"cool handlebars",
+		"vintage bell",
+		"toe clips"],
 	wheels: {
 		count: 2,
-		specs: ["road tires", "AX-7563", "80-115 PSI"],
-		brand: "Trek"
+		specs: [
+			"road tires",
+			"AX-7563",
+			"80-115 PSI"
+		],
+	brand: "Trek"
 	}
 }
 
 // Log the type of bicycle:
-console.log()
+console.log(bicycle.type)
 
 // Log just the bell from the list of gear
-console.log()
+console.log(bicycle.gear[2])
 
 // Log the correct PSI for the tires
-console.log()
+console.log(bicycle.wheels.specs[2])
 
 // 3. Write a function that takes two arguments, a string and an individual letter. The function should return a count of how many times the letter appears in the string.
 
-// examples:
+function findNumOfChars(str, ltr) {
+	let counter = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str[i] === ltr) {
+			counter++
+		}
+	}
+	console.log(counter);
+}
 
-countLetter("Hello World", "l")
-
-// should return => 3
-
-countLetter("Hello World", "z")
-
-// should return => 0
+findNumOfChars("Hello World", "l");
+findNumOfChars("Hello World", "o")
+findNumOfChars("Hello World", "z")
