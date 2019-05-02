@@ -4,42 +4,43 @@ Try your best to answer each question on your own before looking up the answer o
 
 ### 1. What are some advantages of using Ruby on Rails?
 
+
 ### 2. How does Ruby on Rails use the Model View Controller (MVC) framework?
 
 ### 3. Using the information given, complete the steps for creating a new view in a rails app by filling in the blanks:
 
-  1. Create a route: 
-  
-  code: 
+  1. Create a route:
+
+  code:
   ```
-  get '/about' => 'statics#about' 
+  get '/about' => 'statics#about'
   ```
   file: config/routes
-  
+
   2. Create the ____________
-  
-  code: 
+
+  code:
   ```
   class ____________ < ApplicationController
-  
-  def about 
+
+  def about
     _______________________
   end
   ```
-  
+
   file: _____________________
-  
+
   3. Create the View
-  
-  code: 
-  
+
+  code:
+
   ```
   <div>This is the About page!</div>
   ```
-  
+
   file: _____________________
-  
-  
+
+
 ### 4. Look at these sets of Rails routes, they are an example of which principle/term that we touched on briefly in class? Find the term, and explain why it is important.
 
 ```
@@ -64,7 +65,7 @@ Try your best to answer each question on your own before looking up the answer o
 
 ### 10. Name two rails generator commands and what files they create:
 
-### 11. Rails has a great community and lots of free tutorials to help you learn. Here is a list of some tutorials to choose from, choose one, do it, and then report back here at least one thing you learned. You can also use a different resource if you find one that you like better. 
+### 11. Rails has a great community and lots of free tutorials to help you learn. Here is a list of some tutorials to choose from, choose one, do it, and then report back here at least one thing you learned. You can also use a different resource if you find one that you like better.
 
 - https://www.tutorialspoint.com/ruby-on-rails/index.htm
 - http://railsforzombies.org
